@@ -5,7 +5,7 @@ from spotipy.oauth2 import SpotifyClientCredentials
 app = Flask(__name__)
 
 client_id = "58359343c27240ac9df7338477111e8d"
-client_secret = 
+client_secret = "889b29e34e154cd9956319a52f8dcd4f"
 
 @app.route('/fetch_tracks', methods=['Post'])
 def fetch_tracks():

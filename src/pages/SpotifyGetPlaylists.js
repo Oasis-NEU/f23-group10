@@ -58,11 +58,14 @@ const SpotifyGetPlaylists = () => {
 
   const handleSubmitGuess = (e) => {
     e.preventDefault();
-    // Check if the guessed song is correct and handle accordingly
-    const selectedSong = playlistTracks.find((track) => track.name === inputValue);
-    if (selectedSong) {
-      handleSongGuess(selectedSong.name);
-    }
+  // Convert input value to lowercase for case-insensitive comparison
+  const inputValueLowercase = inputValue.toLowerCase();
+
+  // Check if the guessed song is correct and handle accordingly
+  const selectedSong = playlistTracks.find((track) => track.name.toLowerCase() === inputValueLowercase);
+  if (selectedSong) {
+    handleSongGuess(selectedSong.name);
+  }
 
     if (Object.values(guessedSongs).every((guessed) => guessed)) {
       setShowWinText(true);
