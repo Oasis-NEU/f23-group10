@@ -200,6 +200,8 @@ const SpotifyGetPlaylists = () => {
             <h5>How to Play:</h5>
             <ol>
               <li>Select a playlist</li>
+              <li>Type in the songs in your playlist</li>
+              <li>Enter all of them correctly to win!</li>
             </ol>
           </Col>
         </Row>) : (null)
