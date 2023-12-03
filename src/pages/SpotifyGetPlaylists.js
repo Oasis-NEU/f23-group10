@@ -192,7 +192,7 @@ const SpotifyGetPlaylists = () => {
             </Row>
             <Row>
               <Col sm={4} md={4} lg={3}>
-                <Button id='get-playlist-btn' variant='success' onClick={handleButtonClick}>Begin</Button>
+                <Button id='get-playlist-btn' variant='success' onClick={handleButtonClick}>Select Playlist</Button>
               </Col>
             </Row>
           </Col>
